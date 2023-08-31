@@ -1,13 +1,16 @@
 @charset "utf-8";
 
 /***font***/
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Schoolbell&family=Walter+Turncoat&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Hi+Melody&family=Roboto+Mono:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Hi+Melody&family=Orbitron:wght@800&family=Roboto+Mono:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Hi+Melody&family=Orbitron:wght@800&family=Roboto+Mono:wght@700&display=swap'); */
 
 body{
     height: 100vh;
-    font-family: 'Orbitron','Roboto Mono','sans-serif';
+    font-family: 'Noto Sans Display', sans-serif;
+
 }
 
 #wrapper{
@@ -20,7 +23,7 @@ body{
 nav{
     width: 120px;
     height: 100%;
-    background-color: #eee;
+    background-image: url(./grid_images/door2.jpg);
     text-align: center;
     transform-origin: left center ;
     transform: rotateY(30deg); /***140deg로 변경해도 됨***/
@@ -35,15 +38,23 @@ nav{
 
 nav>img{
     width: 50%;
-    margin-top: 100px;
+    margin-bottom: 200px;
 }
-
+nav > ul{
+    position: absolute;
+    bottom: 200px;
+}
 nav > ul >li {
+    text-indent: 5px;
     padding-top: 60px;
     line-height: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
+    color: #fff;
+    text-align: left;
 }
-
+nav > ul >li:hover{
+    color: rgb(238, 246, 4);
+}
 .menu-icon{
     position: fixed;
     top:30px;
@@ -116,12 +127,13 @@ section > p{
 section.box1>p:nth-child(1){
     grid-column: 1/3;
     background-color: #313131;
-    font-size: 40px;
+    font-size: 20px;
+    
 
 }
 
 section.box1>p:nth-child(2){
-    background-image: url(./grid_images/m1.jpg);
+    background-image: url(./grid_images/gardening/flower-2510254_1280.jpg);
     background-position: center;
     background-size: 110%;
     /* background-size: cover; */
@@ -132,23 +144,23 @@ section.box1>p:nth-child(3){
    background-color: #595959;
 }
 section.box1>p:nth-child(4){
-   background-color: rgb(176, 176, 175);
-   font-weight:lighter;
+    background-image: url(./grid_images/gardening/winter2.jpg);
+    background-position: center;
 }
 section.box1>p:nth-child(5){
-    background-image: url(./grid_images/m3.jpg);
-    background-position: right center;
+    background-image: url(./grid_images/gardening/blueberry2.jpg);
+    background-position: center;
     
 }
 section.box1>p:nth-child(6){
 grid-column: 3/5;
 grid-row: 2/4;;
-background-image: url(./grid_images/m2.jpg);
+background-image: url(./grid_images/gardening/spray-7735554_1280.gif);
 background-position: left ;
 background-size: 145%;
 }
 section.box1>p:nth-child(7){
-    background-image: url(./grid_images/m4.jpg);
+    background-image: url(./grid_images/gardening/RE15.jpg);
     background-position: right center;
     background-size: 130%;
     background-position: center ;
@@ -156,20 +168,21 @@ section.box1>p:nth-child(7){
 }
 section.box1>p:nth-child(8){
     background-color: rgb(45, 42, 42);
-    font-size: 30px;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: rgb(199, 178, 234);    
 }
 section.box1>p:nth-child(9){
     background-color: rgb(72, 72, 72);
 }
 section.box1>p:nth-child(10){
     grid-column: 2/4;
-    background-image: url(./grid_images/m5.jpg);
+    background-image: url(./grid_images/gardening/wineman-5.jpg);
     background-position: center;
     background-size: 140% ;
 }
 section.box1>p:nth-child(11){
-    background-color: rgb(18, 18, 17);
+    background-image: url(./grid_images/gardening/spider-6.jpg);
+    background-position: center;
 }
 
 
@@ -178,59 +191,60 @@ section.box2>p:nth-child(1){
     background-color: #313131;
 }
 section.box2>p:nth-child(2){
-    background-image: url(./grid_images/w1.jpg);
+    background-image: url(./grid_images/FAIRING/barista2.jpg);
     background-position: center bottom;
-    background-size: 140%;
+    background-size: 100%;
     /* background-size: cover; */
     transition: 2s;
     transform: rotateZ(360deg);
 }
 section.box2>p:nth-child(3){
- grid-column: 3/5;
+    grid-column: 3/5;
     background-color: rgb(18, 18, 17);
     font-size: 40px;
+    color: rgb(190, 150, 164);
 }
 section.box2>p:nth-child(4){
-    background-image: url(./grid_images/w4.jpg);
+    grid-column: 4/5;
+    grid-row: 2/4;
+    background-image: url(./grid_images/FAIRING/platter-2009590_1280.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: 200%;
 }
 section.box2>p:nth-child(5){
     grid-row: 2/4;
-    background-image: url(./grid_images/w2.jpg);
+    background-image: url(./grid_images/FAIRING/spices-370114_1280.jpg);
     background-position: top;
-    background-size: 110%;
+    background-size: 200%;
 }
 section.box2>p:nth-child(6){
 grid-column: 2/4;
 grid-row: 2/4;
-background-image: url(./grid_images/w3.jpg);
+background-image: url(./grid_images/FAIRING/aperitif-2027177_1280.jpg);
 background-position: center;
 background-size: 120%;
 opacity: 80%;
 }
+
 section.box2>p:nth-child(7){
-    background-color: rgb(45, 42, 42);
-}
-section.box2>p:nth-child(8){
-    background-image: url(./grid_images/w5.jpg);
+    background-image: url(./grid_images/FAIRING/berries-2986532_1280.jpg);
     background-position: center;
-    background-size: 130%;
+    background-size: 140%;
     opacity: 90%;
 }
-section.box2>p:nth-child(9){
+section.box2>p:nth-child(8){
     background-color: rgb(61, 60, 60);
 }
-section.box2>p:nth-child(10){
-    background-image: url(./grid_images/w6.jpg);
-    background-position: left;
-    background-size: 130%;
+section.box2>p:nth-child(9){
+    background-image: url(./grid_images/FAIRING/japanese-clay-teapot-3161963_1280.jpg);
+    background-position: left top;
+    background-size: 120%;
 
 }
-section.box2>p:nth-child(11){
-  background-image: url(./grid_images/w7.jpg);
+section.box2>p:nth-child(10){
+  background-image: url(./grid_images/FAIRING/tea-1132529_1280.jpg);
     background-position: center;
-    background-size: 130%;
+    background-size: 120%;
 }
 
 
@@ -241,15 +255,15 @@ section.box2>p:nth-child(11){
 section.box3>p:nth-child(1){
     grid-column: 1/3;
     grid-row: 1/5;
-    background-image: url(./grid_images/k1.jpg);
+    background-image: url(./grid_images/playing/R3.jpg);
     background-position: center;
-    background-size: 120%;
+    background-size: 150%;
 }
 section.box3>p:nth-child(2){
     background-color: rgb(61, 60, 60);
 }
 section.box3>p:nth-child(3){
-    background-image: url(./grid_images/k2.jpg);
+    background-image: url(./grid_images/playing/RE8.jpg);
     background-position: center;
     background-size: 150%;
     transition: 2s;
@@ -259,21 +273,22 @@ section.box3>p:nth-child(4){
 grid-column: 3/5;
 background-color: rgb(45, 42, 42);
 font-size: 40px;
+color: rgb(171, 197, 131);
 }
 section.box3>p:nth-child(5){
    grid-row: 3/5;
-   background-image: url(./grid_images/k3.jpg);
+   background-image: url(./grid_images/playing/RE17.jpg);
     background-position: top;
-    background-size: 150%;
+    background-size: 200%;
 
 }
 section.box3>p:nth-child(6){
     background-color: rgb(72, 72, 72);
 }
 section.box3>p:nth-child(7){
-    background-image: url(./grid_images/k4.jpg);
+    background-image: url(./grid_images/playing/RE9.jpg);
     background-position: center;
-    background-size: 130%;
+    background-size: 100%;
 
 }
 
