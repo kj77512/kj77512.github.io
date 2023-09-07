@@ -1,0 +1,343 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+/***reset***/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,li{
+    list-style: none;
+}
+
+html, button{
+    font-size: 10px;
+    font-family: 'poppins', sans-serif; 
+
+}
+
+body{
+    min-width: 320px;
+    height: 500vh;
+}
+header{
+    background-color: #222;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    z-index: 10;
+
+
+}
+nav>.logo{
+    cursor: pointer;
+}
+nav>.gnb{
+    display: flex;
+}
+nav>.gnb>li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+header>.home{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,1)),url(./image/rose-320868_1280.jpg);
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    line-height: 60px;
+}
+header>.home > i{
+    position: absolute;
+    bottom: 40px;
+    font-size: 2rem;
+}
+header>.home>.container{
+    margin: 2rem 0;
+}
+header>.home h2{
+    font-size: 2rem;
+}
+
+header>.home h3{
+    font-size: 4rem;
+}
+header>.home span.blink{
+    animation: blink 0.5s ease-in-out infinite;
+    /**ease-in-out : 가속도 
+    infinite :무한반복
+    */
+
+}
+header>.home button{
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    padding: 10px 20PX;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+header>.home button:hover{
+    background-color: #fff;
+    color: #222;
+}
+header>.home video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/***** main**/
+main{
+    padding: 20px;
+}
+main >section{
+    width: 60%;
+    margin: 50px auto;
+}
+main >section *{
+    margin: 10px 0;
+}
+section >.title{
+    margin-bottom: 30px;
+}
+
+section >.title >h4{
+    color: #f00;
+    font-size: 2rem;
+}
+section >.title > h2{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+/**** about */
+.about img{
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.about .right>h3{
+    font-size: 2rem;
+    
+}
+
+.about .sns i{
+    font-size: 2rem;
+    margin: 0 5px;
+}
+
+.features .card{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.features .card:hover{
+    background-color: tomato;
+    color: #fff;
+}
+.features .card:hover *{
+    color: #fff;
+}
+.features .card i{
+    color: #f00;
+    font-size: 2rem;
+}
+
+.features .card h3{
+    font-size: 2rem;
+    font-weight: bolder;   
+}
+
+.features .card p{
+    word-break: break-all;
+    color: #666;
+    font-size: 1rem;
+}
+
+
+/***background fixed***/
+.bg{
+    background-image: url(./image/tee-7807226_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}   
+
+
+/***portfolio****/
+
+.portfolio .card{
+    border: 1px solid #888;
+    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.portfolio .card:hover{
+    transform: scale(1.1);
+
+}
+.portfolio .card img{
+    width: 100%;
+}
+
+.portfolio .card h3{
+    color: tomato;
+    font-size: 2rem;
+}
+
+.portfolio .card p{
+    font-size: 3rem;
+}
+
+
+/***contact*****/
+.contact .card{
+    border: 1px solid #888;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+.contact .card .icon{
+    font-size: 3rem;
+    margin: 1.5rem;
+}
+
+.contact .text strong{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.contact form{
+    border: 1px solid #888;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.contact form label{
+    display: block;
+}
+
+.contact form input,
+.contact form textarea{
+    width: 100%;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+.contact form textarea{
+    height: 200px;
+    resize: none;
+}
+
+
+
+.contact form input:focus,
+.contact form textarea:focus{
+    box-shadow: 0 0 10px rgb(7, 149, 250);
+    outline:none;
+}
+
+.contact form button{
+    width: 100%;   
+    background-color: rgb(253, 179, 7);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+
+
+
+/***animation****/
+
+@keyframes blink {
+    0%{ opacity: 1;}
+    100%{opacity: 0;}   
+}
+/***** 320px 768px 1024px******/
+/****** 미디어 쿼리 작성******/
+/****** 기본 레이아웃은 모바일을 기준으로 함*****/
+/****** 테블릿******/
+
+@media all and (min-width:768px) {
+    html{
+        font-size: 12px;
+    }  
+    main > section{    
+        width: 100%;
+        max-width: 600px;
+        margin: 50px auto;
+    }
+    section > .detail{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .features >.detail >.card,
+    .portfolio > .detail >.card{
+        width: 45%;
+    }
+}
+/****** PC ********/
+@media all and (min-width:1024px){
+    html{
+        font-size: 14px;
+    }
+    
+    main > section{
+        width: 100%;
+        max-width: 1024px;
+        margin: 50px auto;
+    }
+    
+    section >.detail
+    { display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+
+    .about > .detail img{
+        width: 50%;
+    }
+    
+    .features >.detail > .card,
+    .portfolio >.detail > .card
+    {
+        width: 30%;
+    }
+    
+    .contact >.detail >.left{
+        width: 35%;
+    }
+    .contact >.detail >.right{
+        width: 60%;
+    }
+} 
